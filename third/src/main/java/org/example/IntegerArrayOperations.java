@@ -12,7 +12,8 @@ public class IntegerArrayOperations implements ArrayOperations<Integer> {
             arrayToReverse[arrayToReverse.length-i-1] = temp;
         }return arrayToReverse;
     }
-    
+
+
     public Integer[] sortAscending(Integer @NotNull [] arrayToSort){
         for(int i = 0; i< arrayToSort.length; i++){
             for(int j = 0; j< arrayToSort.length - 1; j++){
