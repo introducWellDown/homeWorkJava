@@ -1,0 +1,21 @@
+<hibernate-configuration>
+    <session-factory>
+        <!-- Указываем класс драйвера PostgreSQL -->
+        <property name="hibernate.connection.driver_class">org.postgresql.Driver</property>
+        <!-- URL подключения к PostgreSQL -->
+        <property name="hibernate.connection.url">jdbc:postgresql://localhost:5432/postgres</property>
+        <!-- Имя пользователя для базы данных -->
+        <property name="hibernate.connection.username">postgres</property>
+        <!-- Пароль пользователя -->
+        <property name="hibernate.connection.password">toortoor</property>
+        <!-- Диалект Hibernate для PostgreSQL -->
+        <property name="hibernate.dialect">org.hibernate.dialect.PostgreSQL10Dialect</property>
+        <!-- Настройки для автоматического обновления схемы базы данных -->
+        <property name="hibernate.hbm2ddl.auto">update</property>
+        <!-- Включение логирования SQL-запросов -->
+        <property name="hibernate.show_sql">true</property>
+        <property name="hibernate.format_sql">true</property>
+        <!-- Подключение вашей сущности -->
+        <mapping class="org.example.entity.Human"/>
+    </session-factory>
+</hibernate-configuration>
